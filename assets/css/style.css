@@ -13,6 +13,18 @@ body {
 header {
     padding: 20px;
     background-color: #232323;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/port-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
 
 header h1 {
@@ -29,12 +41,21 @@ header nav {
 }
 
 header nav ul {
-    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li {
-    display: inline-block;
     margin-left: 35px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw
 }
 
 a {
@@ -52,9 +73,14 @@ p {
     background-image: url(../images/port-bg.jpg);
     width: 100%;
     height: 800px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     background-size: cover;
     background-position: center;
     position: relative;
+    background-position: 80%;
     margin-bottom: 25px;
 }
 
@@ -101,7 +127,78 @@ main {
 } 
 /* End style about me section */
 
+/* Start style work info section */
+.work-info {
+    width: 80%;
+    margin: 2rem auto; 
+  }
 
+.img-title {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+  margin-left: 0;
+}
+
+.work-title-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .img-1 {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 4;
+
+  }
+
+  .img-2 {
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .img-3 {
+      grid-column: 5 / span 2;
+      grid-row: 3 / span 2;
+  }
+
+  .img-4 {
+      grid-column: 1 / span 2;
+      grid-row: 5 / span 2;
+  }
+
+  .img-5 {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 2;
+  }
+
+  .img-subtitle {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      background-color: #241c19;
+      font-size: 12px;
+  }
+
+  .work-title {
+    position: relative;
+  }
+
+  .work-info {
+    display: flex;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 100px;
+    justify-content: space-around;
+  } 
+
+  .work-info h2 {
+    border-right: 5px solid #C5D201;
+    padding-right: 30px;
+  }
+  /* End style work info section */
 
 
 
