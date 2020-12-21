@@ -231,9 +231,24 @@ main {
         line-height: 1.5;
         font-style: normal;
     }
+
+    .contact a {
+        text-decoration: underline;
+    }
     /* End style contact me section */
 
-   
+    /* apply styles to footer */
+    footer {
+        padding: 30px;
+        clear: both;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        background-color: #241c19;
+    }
+    
+    footer h2 {
+        font-size: 20px;
+    }
 
 
 
