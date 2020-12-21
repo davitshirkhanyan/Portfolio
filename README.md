@@ -8,7 +8,7 @@ A website about me, my works, my contacts.
 * CSS
 
 ## Website
-https://davitshirkhanyan.github.io/run-buddy/
+https://davitshirkhanyan.github.io/portfolio/
 
 ## Contribution
 Made by Davit Shirkhanyan
