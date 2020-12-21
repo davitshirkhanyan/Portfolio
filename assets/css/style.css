@@ -1,7 +1,6 @@
 :root {
     --primary-color: #C5D201;
     --secondary-color: #241c19;
-
 }
 
 * {
@@ -271,7 +270,6 @@ main {
     /* end styles to footer */
 
     /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-
     @media screen and (max-width: 980px) {
         header {
             padding-bottom: 0;
