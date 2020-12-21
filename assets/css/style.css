@@ -101,14 +101,17 @@ p {
 main {
     width: 100%;
     display: inline-block;
-    margin-left: 20px;
+    background-color: #f3e9e6;
+    background-position: center;
+    background-size: cover;
+    background-position: 80%;
 }
 
 /* Start style about me section */
 .about-me-title {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px 30px;
 } 
 
@@ -129,16 +132,18 @@ main {
 
 /* Start style work info section */
 .work-info {
-    width: 80%;
-    margin: 2rem auto; 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px;
+  font-size: 20px;
   }
 
 .img-title {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1.5rem; 
-  margin-left: 0;
+  grid-gap: 1.5rem;
+  
 }
 
 .work-title-img {
@@ -146,6 +151,7 @@ main {
     height: 100%;
     object-fit: cover;
     display: block;
+    border: 5px solid #C5D201;
   }
 
   .img-1 {
@@ -176,29 +182,60 @@ main {
 
   .img-subtitle {
       position: absolute;
-      bottom: 0px;
-      left: 0;
+      bottom: 10px;
+      left: 10px;
       background-color: #241c19;
       font-size: 12px;
   }
 
   .work-title {
     position: relative;
+    
   }
 
   .work-info {
-    display: flex;
-    font-size: 30px;
-    padding-top: 20px;
-    margin-left: 100px;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
   } 
 
   .work-info h2 {
-    border-right: 5px solid #C5D201;
-    padding-right: 30px;
+    font-size: 36px;
+    padding-top: 20px;
+    margin-left: 70px;
   }
   /* End style work info section */
+
+/* Start style contact me section */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px;
+  font-size: 20px;
+  } 
+
+  .contact-info {
+    padding: 30px 30px;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 100px;
+    }
+
+    .contact-info address {
+        margin: 20px 0;
+        line-height: 1.5;
+        font-style: normal;
+    }
+    /* End style contact me section */
+
+   
+
+
 
 
 
