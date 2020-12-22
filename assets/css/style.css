@@ -12,11 +12,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-color);
-}
+} 
 
 /* apply styles to header */
 header {
-    padding: 20px;
+    padding: 20px 0; 
     background-color: #232323;
     display: flex;
     justify-content: space-between;
@@ -30,49 +30,51 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    align-items: center;
 }
 
-header h1 {
+header h1 a {
     display: inline-block;
     font-size: 36px;
     font-weight: bold;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 header nav {
     float: right;
     margin-right: 10px;
-    font-size: 24px;
-    padding-top: 10px;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
 header nav ul li {
     margin-left: 35px;
+    
 }
 
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw
+    font-size: 23px;
+    text-decoration: underline;
+    color: var(--primary-color);
 }
 
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
-
-}
-
-a {
     text-decoration: none;
-    color: var(--primary-color);
 }
 
 p {
@@ -162,17 +164,16 @@ main {
 
 .img-title {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1.5rem;
+  margin: 0 auto;
 }
 
 .work-title-img {
     transition: 1s;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
     border: 5px solid var(--primary-color);
   }
 
@@ -182,38 +183,18 @@ main {
       height: 103%;
   }
 
-  .img-1 {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 4;
-
-  }
-
-  .img-2 {
-    grid-column: 5 / span 2;
-    grid-row: 1 / span 2;
-  }
-
-  .img-3 {
-      grid-column: 5 / span 2;
-      grid-row: 3 / span 2;
-  }
-
-  .img-4 {
-      grid-column: 1 / span 2;
-      grid-row: 5 / span 2;
-  }
-
-  .img-5 {
-    grid-column: 3 / span 2;
-    grid-row: 5 / span 2;
+  .main-img {
+      grid-column: span 2;
+      grid-row: span 2;
   }
 
   .img-subtitle {
       position: absolute;
-      bottom: 10px;
-      left: 10px;
-      background-color: var(--secondary-color);
-      font-size: 12px;
+      bottom: 20px;
+      left: 1px;
+      background-color: var(--primary-color);
+      font-size: 15px;
+      color: var(--secondary-color); ;
   }
 
   .work-title {
@@ -237,10 +218,11 @@ main {
 /* Start style contact me section */
 .contact {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 25px;
-  font-size: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 18px;
   } 
 
   .contact-info {
@@ -262,6 +244,7 @@ main {
 
     .contact a {
         text-decoration: underline;
+        color: var(--primary-color);
     }
     /* End style contact me section */
 
@@ -281,25 +264,14 @@ main {
 
     /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
     @media screen and (max-width: 980px) {
-        header {
-            padding-bottom: 0;
-            justify-content: center;
-            position: relative;
+       
+        header h1 a {
+            font-size: 28px;
         }
-   
-        header h1 {
-            width: 100%;
-            text-align: center;
-        }
-   
-        header nav ul {
-            margin-top: 20px;
-            width: 100%;
-            justify-content: center;
-        }
-   
+
         header nav ul li a {
-            font-size: 20px;
+            font-size: 21px;
+            padding: 2px;
         }
    
         footer h2 {
@@ -321,7 +293,7 @@ main {
 
         .about-me-title h2:hover {
             height: 300px;
-            font-size: 25px;
+            font-size: 23px;
         }
 
         .img-title {
@@ -330,6 +302,24 @@ main {
     }
 
         @media screen and (max-width: 768px) {
+
+            header {
+                justify-content: center;
+                padding: 14px;
+                padding-top: 0;
+
+            }
+
+            header h1 a {
+            font-size: 26px;
+            margin-bottom: 15px;
+            }
+
+            header nav ul li a {
+                font-size: 22px;
+                margin: 5px;
+            }
+
             .contact {
                 font-size: 15px;
             }
@@ -354,6 +344,15 @@ main {
     } 
 
     @media screen and (max-width: 575px) {
+
+        header h1 a {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        header nav ul li a {
+            font-size: 15px;
+        }
 
         .about-me-title {
             display: inline;
@@ -396,7 +395,7 @@ main {
             padding: 10px;
         }
     }
-
+/* END STYLE MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 
 
