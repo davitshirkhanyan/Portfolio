@@ -133,6 +133,16 @@ main {
     margin-left: 100px;
 }
 
+.about-me-title h2:hover {
+    background-image: url(../images/davitshirkhanyan.jpg);
+    width: 200%;
+    height: 600px;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+}
+
 .about-me-title p {
     border-left: 5px solid var(--primary-color);
     margin: 40px;
@@ -308,6 +318,15 @@ main {
         .contact h2 {
             margin-left: 0;
         }
+
+        .about-me-title h2:hover {
+            height: 300px;
+            font-size: 25px;
+        }
+
+        .img-title {
+            padding: 10px;
+        }
     }
 
         @media screen and (max-width: 768px) {
@@ -324,22 +343,32 @@ main {
                 font-size: 12px;
             }
 
+            .about-me-title h2:hover {
+                text-align: center;
+                width: 300%;
+            }
+
+            .img-title {
+                padding: 10px;
+            }
     } 
 
     @media screen and (max-width: 575px) {
+
         .about-me-title {
             display: inline;
 
         }
 
         .about-me-title  h2{
-            font-size: 20px;
             text-align: center;
             margin: 0%;
         }
 
-        .about-me-title p {
-            font-size: 10px;
+        .about-me-title p,
+        .contact address,
+        .contact a {
+            font-size: 12px;
             border: none;
         }
         .img-subtitle h3,
@@ -347,6 +376,25 @@ main {
             font-size: 5px;
         }
 
+        .about-me-title h2:hover {
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        header nav ul li {
+            line-height: 1.5;
+        }
+
+        .about-me-title h2,
+        .work-info h2,
+        .contact h2 {
+            font-size: 20px;
+        }
+
+        .img-title {
+            padding: 10px;
+        }
     }
 
 
