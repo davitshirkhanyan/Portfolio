@@ -15,5 +15,4 @@ Made by Davit Shirkhanyan
 
 ### ©️2020 Davit Shirkhanyan's portfolio
 
-![Html](https://user-images.githubusercontent.com/74809116/102742133-0b670680-4309-11eb-9e91-e23a88a26ef9.PNG)
-![Css](https://user-images.githubusercontent.com/74809116/102742135-0c983380-4309-11eb-8303-6c24e6dd902c.PNG)
+![porfolio image](https://user-images.githubusercontent.com/74809116/107142457-e132cd80-68e3-11eb-9ce4-5c783721993e.PNG)
