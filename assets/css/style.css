@@ -205,24 +205,24 @@ header nav ul li a:hover {
     font-size: 1.2rem;
   }
 
+  .date-night {
+    background-image: url("../images/project1.PNG");
+  }
+
   .run-buddy {
     background-image: url("../images/run-buddy.png");
   }
   
-  .horiseon {
-    background-image: url("../images/horiseon.PNG");
+  .weather-dashboard {
+    background-image: url("../images/weather-dashboard.PNG");
   }
   
   .password-generator {
     background-image: url("../images/password.PNG");
   }
   
-  .placeholder2 {
-    background-image: url("../images/placeholder-image-2.png");
-  }
-  
-  .placeholder3 {
-    background-image: url("../images/placeholder-image-3.png");
+  .git-it-done {
+    background-image: url("../images/git-it-done.PNG");
   }
   /* End work section styles */
   
